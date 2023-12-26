@@ -1,6 +1,67 @@
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
 
+String AudioPluginAudioProcessor::paramID_OSC_0_FP0("O0F0");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP1("O0F1");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP2("O0F2");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP3("O0F3");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP4("O0F4");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP5("O0F5");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP6("O0F6");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP7("O0F7");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP8("O0F8");
+String AudioPluginAudioProcessor::paramID_OSC_0_FP9("O0F9");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP0("O1F0");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP1("O1F1");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP2("O1F2");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP3("O1F3");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP4("O1F4");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP5("O1F5");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP6("O1F6");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP7("O1F7");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP8("O1F8");
+String AudioPluginAudioProcessor::paramID_OSC_1_FP9("O1F9");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP0("O2F0");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP1("O2F1");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP2("O2F2");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP3("O2F3");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP4("O2F4");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP5("O2F5");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP6("O2F6");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP7("O2F7");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP8("O2F8");
+String AudioPluginAudioProcessor::paramID_OSC_2_FP9("O2F9");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP0("O3F0");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP1("O3F1");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP2("O3F2");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP3("O3F3");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP4("O3F4");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP5("O3F5");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP6("O3F6");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP7("O3F7");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP8("O3F8");
+String AudioPluginAudioProcessor::paramID_OSC_3_FP9("O3F9");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP0("O4F0");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP1("O4F1");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP2("O4F2");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP3("O4F3");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP4("O4F4");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP5("O4F5");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP6("O4F6");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP7("O4F7");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP8("O4F8");
+String AudioPluginAudioProcessor::paramID_OSC_4_FP9("O4F9");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP0("O5F0");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP1("O5F1");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP2("O5F2");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP3("O5F3");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP4("O5F4");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP5("O5F5");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP6("O5F6");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP7("O5F7");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP8("O5F8");
+String AudioPluginAudioProcessor::paramID_OSC_5_FP9("O5F9");
+
 //==============================================================================
 AudioPluginAudioProcessor::AudioPluginAudioProcessor()
     : AudioProcessor(BusesProperties()
@@ -12,13 +73,7 @@ AudioPluginAudioProcessor::AudioPluginAudioProcessor()
 #endif
       )
 {
-    plugParams = new PluginParams();
     apvts = new AudioProcessorValueTreeState(*this, nullptr, "Parameters", createParameters());
-    for (auto const &map : plugParams->sliderVector)
-    {
-        if (map.addListener)
-            apvts->addParameterListener(map.paramId, this);
-    }
 }
 
 AudioPluginAudioProcessor::~AudioPluginAudioProcessor()
@@ -200,28 +255,135 @@ juce::AudioProcessor *JUCE_CALLTYPE createPluginFilter()
 juce::AudioProcessorValueTreeState::ParameterLayout AudioPluginAudioProcessor::createParameters()
 {
     std::vector<std::unique_ptr<juce::RangedAudioParameter>> params;
-    for (auto const &map : plugParams->sliderVector)
-    {
 
-        std::unique_ptr<Renameable<AudioParameterFloat>> p;
-        p = std::make_unique<Renameable<AudioParameterFloat>>(map.paramId, "", 0.0f, 1.0f, 0.5f);
+    std::unique_ptr<AudioParameterFloat> p;
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP0, paramID_OSC_0_FP0, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP1, paramID_OSC_0_FP1, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP2, paramID_OSC_0_FP2, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP3, paramID_OSC_0_FP3, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP4, paramID_OSC_0_FP4, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP5, paramID_OSC_0_FP5, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP6, paramID_OSC_0_FP6, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP7, paramID_OSC_0_FP7, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP8, paramID_OSC_0_FP8, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP9, paramID_OSC_0_FP9, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
 
-        // p->setName(Params::OscSliderParams[0][map.parameterId].dawTitle);
-        // p->setName("slider");
-        p->setParameterForOsciilator(map.parameterForOsc, map.parameterId);
-        params.push_back(std::move(p));
-    }
-    // for (auto const &map : Params::chooseParamsMap)
-    // {
-    //     // todo REMAKE with not normalized values
-    //     auto attributes = AudioParameterChoiceAttributes().withLabel("selected");
-    //     std::unique_ptr<Renameable<AudioParameterInt>> p;
-    //     StringArray chooses = {"0", "1", "2", "3", "4"};
-    //     p = std::make_unique<Renameable<AudioParameterInt>>(map.paramId, "chooses", 0, 1000, 0);
-    //     p->setName("test");
-    //     p->setAutomatable(false);
-    //     p->setParameterForOsciilator(map.parameterForOsc, map.parameterId);
-    //     params.push_back(std::move(p));
-    // }
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP0, paramID_OSC_1_FP0, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP1, paramID_OSC_1_FP1, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP2, paramID_OSC_1_FP2, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP3, paramID_OSC_1_FP3, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP4, paramID_OSC_1_FP4, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP5, paramID_OSC_1_FP5, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP6, paramID_OSC_1_FP6, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP7, paramID_OSC_1_FP7, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP8, paramID_OSC_1_FP8, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP9, paramID_OSC_1_FP9, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP0, paramID_OSC_2_FP0, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP1, paramID_OSC_2_FP1, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP2, paramID_OSC_2_FP2, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP3, paramID_OSC_2_FP3, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP4, paramID_OSC_2_FP4, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP5, paramID_OSC_2_FP5, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP6, paramID_OSC_2_FP6, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP7, paramID_OSC_2_FP7, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP8, paramID_OSC_2_FP8, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP9, paramID_OSC_2_FP9, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP0, paramID_OSC_3_FP0, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP1, paramID_OSC_3_FP1, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP2, paramID_OSC_3_FP2, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP3, paramID_OSC_3_FP3, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP4, paramID_OSC_3_FP4, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP5, paramID_OSC_3_FP5, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP6, paramID_OSC_3_FP6, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP7, paramID_OSC_3_FP7, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP8, paramID_OSC_3_FP8, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP9, paramID_OSC_3_FP9, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP0, paramID_OSC_4_FP0, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP1, paramID_OSC_4_FP1, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP2, paramID_OSC_4_FP2, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP3, paramID_OSC_4_FP3, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP4, paramID_OSC_4_FP4, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP5, paramID_OSC_4_FP5, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP6, paramID_OSC_4_FP6, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP7, paramID_OSC_4_FP7, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP8, paramID_OSC_4_FP8, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP9, paramID_OSC_4_FP9, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP0, paramID_OSC_5_FP0, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP1, paramID_OSC_5_FP1, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP2, paramID_OSC_5_FP2, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP3, paramID_OSC_5_FP3, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP4, paramID_OSC_5_FP4, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP5, paramID_OSC_5_FP5, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP6, paramID_OSC_5_FP6, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP7, paramID_OSC_5_FP7, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP8, paramID_OSC_5_FP8, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP9, paramID_OSC_5_FP9, 0.0f, 1.0f, 0.5f);
+    params.push_back(std::move(p));
+
+    params.push_back(std::move(p));
+
     return {params.begin(), params.end()};
 }
