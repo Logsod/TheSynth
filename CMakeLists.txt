@@ -59,7 +59,7 @@ FetchContent_MakeAvailable(juce)
 # Check the readme at `docs/CMake API.md` in the JUCE repo for the full list.
 
 juce_add_plugin("${PROJECT_NAME}"
-    FORMATS AU VST3                             # The formats to build. Valid formats: Standalone Unity VST3 AU AUv3 AAX VST LV2.
+    FORMATS  VST3                             # The formats to build. Valid formats: Standalone Unity VST3 AU AUv3 AAX VST LV2.
                                                 # AU and AUv3 plugins will only be enabled when building on macOS.
     PRODUCT_NAME "Plugin Template"              # The name of the final executable, which can differ from the target name.
     # PLUGIN_NAME                               # Name of the plugin that will be displayed in the DAW. Can differ from PRODUCT_NAME.
@@ -75,8 +75,8 @@ juce_add_plugin("${PROJECT_NAME}"
     PLUGIN_CODE Dem0                            # A unique four-character plugin id with exactly one upper-case character.
                                                 # GarageBand 10.3 requires the first letter to be upper-case, and the remaining letters to be lower-case.
 
-    IS_SYNTH FALSE                              # Is this a synth or an effect?
-    NEEDS_MIDI_INPUT FALSE                      # Does the plugin need midi input?
+    IS_SYNTH TRUE                              # Is this a synth or an effect?
+    NEEDS_MIDI_INPUT TRUE                      # Does the plugin need midi input?
     NEEDS_MIDI_OUTPUT FALSE                     # Does the plugin need midi output?
     IS_MIDI_EFFECT FALSE                        # Is this plugin a MIDI effect?
     EDITOR_WANTS_KEYBOARD_FOCUS FALSE           # Does the editor need keyboard focus?
@@ -111,7 +111,7 @@ add_subdirectory(Source)
 # into your build tree. The include path for this header will be automatically added to the target.
 # NOTE: JuceHeader.h is generated when the target is built.
 
-# juce_generate_juce_header("${PROJECT_NAME}")
+juce_generate_juce_header("${PROJECT_NAME}")
 
 # `target_compile_definitions` adds some preprocessor definitions to our target.
 # JUCE modules also make use of compile definitions to switch certain features on/off,

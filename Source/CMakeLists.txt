@@ -5,6 +5,8 @@
 
 target_sources("${PROJECT_NAME}"
     PRIVATE
+        Params.h
+        Params.cpp
         PluginEditor.h
         PluginEditor.cpp
         PluginProcessor.h
