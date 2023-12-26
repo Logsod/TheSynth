@@ -383,7 +383,5 @@ juce::AudioProcessorValueTreeState::ParameterLayout AudioPluginAudioProcessor::c
     p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP9, paramID_OSC_5_FP9, 0.0f, 1.0f, 0.5f);
     params.push_back(std::move(p));
 
-    params.push_back(std::move(p));
-
     return {params.begin(), params.end()};
 }
