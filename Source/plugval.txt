@@ -1,0 +1,695 @@
+Test run: 136
+Completed tests in pluginval / Fuzz parameters
+-----------------------------------------------------------------
+Starting tests in: pluginval / Plugin info...
+
+Plugin name: Plugin Template
+Alternative names: Plugin Template
+SupportsDoublePrecision: no
+Reported latency: 0
+Reported taillength: 0
+
+Time taken to run test: 0
+Completed tests in pluginval / Plugin info
+-----------------------------------------------------------------
+Starting tests in: pluginval / Plugin programs...
+Num programs: 0
+All program names checked
+
+Time taken to run test: 0
+Completed tests in pluginval / Plugin programs
+-----------------------------------------------------------------
+Starting tests in: pluginval / Editor...
+
+Time taken to open editor (cold): 208 ms
+Time taken to open editor (warm): 206 ms
+
+Time taken to run test: 418 ms
+Completed tests in pluginval / Editor
+-----------------------------------------------------------------
+Starting tests in: pluginval / Open editor whilst processing...
+
+Time taken to run test: 211 ms
+Completed tests in pluginval / Open editor whilst processing
+-----------------------------------------------------------------
+Starting tests in: pluginval / Audio processing...
+Testing with sample rate [44100] and block size [64]
+Testing with sample rate [44100] and block size [128]
+Testing with sample rate [44100] and block size [256]
+Testing with sample rate [44100] and block size [512]
+Testing with sample rate [44100] and block size [1024]
+Testing with sample rate [48000] and block size [64]
+Testing with sample rate [48000] and block size [128]
+Testing with sample rate [48000] and block size [256]
+Testing with sample rate [48000] and block size [512]
+Testing with sample rate [48000] and block size [1024]
+Testing with sample rate [96000] and block size [64]
+Testing with sample rate [96000] and block size [128]
+Testing with sample rate [96000] and block size [256]
+Testing with sample rate [96000] and block size [512]
+Testing with sample rate [96000] and block size [1024]
+
+Time taken to run test: 6 ms
+Completed tests in pluginval / Audio processing
+-----------------------------------------------------------------
+Starting tests in: pluginval / Non-releasing audio processing...
+Testing with sample rate [44100] and block size [64]
+Testing with sample rate [44100] and block size [128]
+Testing with sample rate [44100] and block size [256]
+Testing with sample rate [44100] and block size [512]
+Testing with sample rate [44100] and block size [1024]
+Testing with sample rate [48000] and block size [64]
+Testing with sample rate [48000] and block size [128]
+Testing with sample rate [48000] and block size [256]
+Testing with sample rate [48000] and block size [512]
+Testing with sample rate [48000] and block size [1024]
+Testing with sample rate [96000] and block size [64]
+Testing with sample rate [96000] and block size [128]
+Testing with sample rate [96000] and block size [256]
+Testing with sample rate [96000] and block size [512]
+Testing with sample rate [96000] and block size [1024]
+
+Time taken to run test: 3 ms
+Completed tests in pluginval / Non-releasing audio processing
+-----------------------------------------------------------------
+Starting tests in: pluginval / Plugin state...
+
+Time taken to run test: 3 ms
+Completed tests in pluginval / Plugin state
+-----------------------------------------------------------------
+Starting tests in: pluginval / Plugin state restoration...
+
+Time taken to run test: 119 ms
+Completed tests in pluginval / Plugin state restoration
+-----------------------------------------------------------------
+Starting tests in: pluginval / Automation...
+Testing with sample rate [44100] and block size [64] and sub-block size [32]
+Testing with sample rate [44100] and block size [128] and sub-block size [32]
+Testing with sample rate [44100] and block size [256] and sub-block size [32]
+Testing with sample rate [44100] and block size [512] and sub-block size [32]
+Testing with sample rate [44100] and block size [1024] and sub-block size [32]
+Testing with sample rate [48000] and block size [64] and sub-block size [32]
+Testing with sample rate [48000] and block size [128] and sub-block size [32]
+Testing with sample rate [48000] and block size [256] and sub-block size [32]
+Testing with sample rate [48000] and block size [512] and sub-block size [32]
+Testing with sample rate [48000] and block size [1024] and sub-block size [32]
+Testing with sample rate [96000] and block size [64] and sub-block size [32]
+Testing with sample rate [96000] and block size [128] and sub-block size [32]
+Testing with sample rate [96000] and block size [256] and sub-block size [32]
+Testing with sample rate [96000] and block size [512] and sub-block size [32]
+Testing with sample rate [96000] and block size [1024] and sub-block size [32]
+
+Time taken to run test: 8 ms
+Completed tests in pluginval / Automation
+-----------------------------------------------------------------
+Starting tests in: pluginval / Editor Automation...
+
+Time taken to run test: 12 secs
+Completed tests in pluginval / Editor Automation
+-----------------------------------------------------------------
+Starting tests in: pluginval / Automatable Parameters...
+
+Testing parameter: 0 - O0F0
+Parameter info: index - 0, paramName - O0F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 1 - O0F1
+Parameter info: index - 1, paramName - O0F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 2 - O0F2
+Parameter info: index - 2, paramName - O0F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 3 - O0F3
+Parameter info: index - 3, paramName - O0F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 4 - O0F4
+Parameter info: index - 4, paramName - O0F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 5 - O0F5
+Parameter info: index - 5, paramName - O0F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 6 - O0F6
+Parameter info: index - 6, paramName - O0F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 7 - O0F7
+Parameter info: index - 7, paramName - O0F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 8 - O0F8
+Parameter info: index - 8, paramName - O0F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 9 - O0F9
+Parameter info: index - 9, paramName - O0F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 10 - O1F0
+Parameter info: index - 10, paramName - O1F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 11 - O1F1
+Parameter info: index - 11, paramName - O1F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 12 - O1F2
+Parameter info: index - 12, paramName - O1F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 13 - O1F3
+Parameter info: index - 13, paramName - O1F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 14 - O1F4
+Parameter info: index - 14, paramName - O1F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 15 - O1F5
+Parameter info: index - 15, paramName - O1F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 16 - O1F6
+Parameter info: index - 16, paramName - O1F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 17 - O1F7
+Parameter info: index - 17, paramName - O1F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 18 - O1F8
+Parameter info: index - 18, paramName - O1F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 19 - O1F9
+Parameter info: index - 19, paramName - O1F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 20 - O2F0
+Parameter info: index - 20, paramName - O2F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 21 - O2F1
+Parameter info: index - 21, paramName - O2F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 22 - O2F2
+Parameter info: index - 22, paramName - O2F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 23 - O2F3
+Parameter info: index - 23, paramName - O2F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 24 - O2F4
+Parameter info: index - 24, paramName - O2F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 25 - O2F5
+Parameter info: index - 25, paramName - O2F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 26 - O2F6
+Parameter info: index - 26, paramName - O2F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 27 - O2F7
+Parameter info: index - 27, paramName - O2F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 28 - O2F8
+Parameter info: index - 28, paramName - O2F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 29 - O2F9
+Parameter info: index - 29, paramName - O2F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 30 - O3F0
+Parameter info: index - 30, paramName - O3F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 31 - O3F1
+Parameter info: index - 31, paramName - O3F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 32 - O3F2
+Parameter info: index - 32, paramName - O3F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 33 - O3F3
+Parameter info: index - 33, paramName - O3F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 34 - O3F4
+Parameter info: index - 34, paramName - O3F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 35 - O3F5
+Parameter info: index - 35, paramName - O3F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 36 - O3F6
+Parameter info: index - 36, paramName - O3F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 37 - O3F7
+Parameter info: index - 37, paramName - O3F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 38 - O3F8
+Parameter info: index - 38, paramName - O3F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 39 - O3F9
+Parameter info: index - 39, paramName - O3F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 40 - O4F0
+Parameter info: index - 40, paramName - O4F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 41 - O4F1
+Parameter info: index - 41, paramName - O4F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 42 - O4F2
+Parameter info: index - 42, paramName - O4F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 43 - O4F3
+Parameter info: index - 43, paramName - O4F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 44 - O4F4
+Parameter info: index - 44, paramName - O4F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 45 - O4F5
+Parameter info: index - 45, paramName - O4F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 46 - O4F6
+Parameter info: index - 46, paramName - O4F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 47 - O4F7
+Parameter info: index - 47, paramName - O4F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 48 - O4F8
+Parameter info: index - 48, paramName - O4F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 49 - O4F9
+Parameter info: index - 49, paramName - O4F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 50 - O5F0
+Parameter info: index - 50, paramName - O5F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 51 - O5F1
+Parameter info: index - 51, paramName - O5F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 52 - O5F2
+Parameter info: index - 52, paramName - O5F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 53 - O5F3
+Parameter info: index - 53, paramName - O5F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 54 - O5F4
+Parameter info: index - 54, paramName - O5F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 55 - O5F5
+Parameter info: index - 55, paramName - O5F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 56 - O5F6
+Parameter info: index - 56, paramName - O5F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 57 - O5F7
+Parameter info: index - 57, paramName - O5F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 58 - O5F8
+Parameter info: index - 58, paramName - O5F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 59 - O5F9
+Parameter info: index - 59, paramName - O5F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Time taken to run test: 8 ms
+Completed tests in pluginval / Automatable Parameters
+-----------------------------------------------------------------
+Starting tests in: pluginval / Parameters...
+
+Testing parameter: 0 - O0F0
+Parameter info: index - 0, paramName - O0F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 1 - O0F1
+Parameter info: index - 1, paramName - O0F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 2 - O0F2
+Parameter info: index - 2, paramName - O0F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 3 - O0F3
+Parameter info: index - 3, paramName - O0F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 4 - O0F4
+Parameter info: index - 4, paramName - O0F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 5 - O0F5
+Parameter info: index - 5, paramName - O0F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 6 - O0F6
+Parameter info: index - 6, paramName - O0F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 7 - O0F7
+Parameter info: index - 7, paramName - O0F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 8 - O0F8
+Parameter info: index - 8, paramName - O0F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 9 - O0F9
+Parameter info: index - 9, paramName - O0F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 10 - O1F0
+Parameter info: index - 10, paramName - O1F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 11 - O1F1
+Parameter info: index - 11, paramName - O1F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 12 - O1F2
+Parameter info: index - 12, paramName - O1F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 13 - O1F3
+Parameter info: index - 13, paramName - O1F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 14 - O1F4
+Parameter info: index - 14, paramName - O1F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 15 - O1F5
+Parameter info: index - 15, paramName - O1F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 16 - O1F6
+Parameter info: index - 16, paramName - O1F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 17 - O1F7
+Parameter info: index - 17, paramName - O1F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 18 - O1F8
+Parameter info: index - 18, paramName - O1F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 19 - O1F9
+Parameter info: index - 19, paramName - O1F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 20 - O2F0
+Parameter info: index - 20, paramName - O2F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 21 - O2F1
+Parameter info: index - 21, paramName - O2F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 22 - O2F2
+Parameter info: index - 22, paramName - O2F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 23 - O2F3
+Parameter info: index - 23, paramName - O2F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 24 - O2F4
+Parameter info: index - 24, paramName - O2F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 25 - O2F5
+Parameter info: index - 25, paramName - O2F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 26 - O2F6
+Parameter info: index - 26, paramName - O2F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 27 - O2F7
+Parameter info: index - 27, paramName - O2F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 28 - O2F8
+Parameter info: index - 28, paramName - O2F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 29 - O2F9
+Parameter info: index - 29, paramName - O2F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 30 - O3F0
+Parameter info: index - 30, paramName - O3F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 31 - O3F1
+Parameter info: index - 31, paramName - O3F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 32 - O3F2
+Parameter info: index - 32, paramName - O3F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 33 - O3F3
+Parameter info: index - 33, paramName - O3F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 34 - O3F4
+Parameter info: index - 34, paramName - O3F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 35 - O3F5
+Parameter info: index - 35, paramName - O3F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 36 - O3F6
+Parameter info: index - 36, paramName - O3F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 37 - O3F7
+Parameter info: index - 37, paramName - O3F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 38 - O3F8
+Parameter info: index - 38, paramName - O3F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 39 - O3F9
+Parameter info: index - 39, paramName - O3F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 40 - O4F0
+Parameter info: index - 40, paramName - O4F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 41 - O4F1
+Parameter info: index - 41, paramName - O4F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 42 - O4F2
+Parameter info: index - 42, paramName - O4F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 43 - O4F3
+Parameter info: index - 43, paramName - O4F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 44 - O4F4
+Parameter info: index - 44, paramName - O4F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 45 - O4F5
+Parameter info: index - 45, paramName - O4F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 46 - O4F6
+Parameter info: index - 46, paramName - O4F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 47 - O4F7
+Parameter info: index - 47, paramName - O4F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 48 - O4F8
+Parameter info: index - 48, paramName - O4F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 49 - O4F9
+Parameter info: index - 49, paramName - O4F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 50 - O5F0
+Parameter info: index - 50, paramName - O5F0, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 51 - O5F1
+Parameter info: index - 51, paramName - O5F1, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 52 - O5F2
+Parameter info: index - 52, paramName - O5F2, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 53 - O5F3
+Parameter info: index - 53, paramName - O5F3, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 54 - O5F4
+Parameter info: index - 54, paramName - O5F4, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 55 - O5F5
+Parameter info: index - 55, paramName - O5F5, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 56 - O5F6
+Parameter info: index - 56, paramName - O5F6, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 57 - O5F7
+Parameter info: index - 57, paramName - O5F7, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 58 - O5F8
+Parameter info: index - 58, paramName - O5F8, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Testing parameter: 59 - O5F9
+Parameter info: index - 59, paramName - O5F9, defaultValue - 0.5, label - , numSteps - 2147483647, isDiscrete - 0, isBoolean - 0, isOrientationInverted - 0, isAutomatable - 1, isMetaParameter - 0, category - 0, all value strings - 
+Testing accessors
+
+Time taken to run test: 7 ms
+Completed tests in pluginval / Parameters
+-----------------------------------------------------------------
+Starting tests in: pluginval / Background thread state...
+
+Time taken to run test: 2 secs
+Completed tests in pluginval / Background thread state
+-----------------------------------------------------------------
+Starting tests in: pluginval / Parameter thread safety...
+
+Time taken to run test: 70 ms
+Completed tests in pluginval / Parameter thread safety
+-----------------------------------------------------------------
+Starting tests in: pluginval / auval...
+
+Time taken to run test: 0
+Completed tests in pluginval / auval
+-----------------------------------------------------------------
+Starting tests in: pluginval / vst3 validator...
+INFO: Skipping vst3 validator as validator path hasn't been set
+
+Time taken to run test: 1 ms
+Completed tests in pluginval / vst3 validator
+-----------------------------------------------------------------
+Starting tests in: pluginval / Basic bus...
+Completed tests in pluginval / Basic bus
+-----------------------------------------------------------------
+Starting tests in: pluginval / Listing available buses...
+Inputs:
+	Named layouts: None
+	Discrete layouts: None
+Outputs:
+	Named layouts: Mono, Stereo
+	Discrete layouts: Discrete #1
+Main bus num input channels: 0
+Main bus num output channels: 2
+Completed tests in pluginval / Listing available buses
+-----------------------------------------------------------------
+Starting tests in: pluginval / Enabling all buses...
+Completed tests in pluginval / Enabling all buses
+-----------------------------------------------------------------
+Starting tests in: pluginval / Disabling non-main busses...
+Completed tests in pluginval / Disabling non-main busses
+-----------------------------------------------------------------
+Starting tests in: pluginval / Restoring default layout...
+Main bus num input channels: 0
+Main bus num output channels: 2
+
+Time taken to run test: 6 ms
+Completed tests in pluginval / Restoring default layout
+-----------------------------------------------------------------
+Starting tests in: pluginval / Fuzz parameters...
+Fuzz testing parameter: 0 - O0F0
+Fuzz testing parameter: 1 - O0F1
+Fuzz testing parameter: 2 - O0F2
+Fuzz testing parameter: 3 - O0F3
+Fuzz testing parameter: 4 - O0F4
+Fuzz testing parameter: 5 - O0F5
+Fuzz testing parameter: 6 - O0F6
+Fuzz testing parameter: 7 - O0F7
+Fuzz testing parameter: 8 - O0F8
+Fuzz testing parameter: 9 - O0F9
+Fuzz testing parameter: 10 - O1F0
+Fuzz testing parameter: 11 - O1F1
+Fuzz testing parameter: 12 - O1F2
+Fuzz testing parameter: 13 - O1F3
+Fuzz testing parameter: 14 - O1F4
+Fuzz testing parameter: 15 - O1F5
+Fuzz testing parameter: 16 - O1F6
+Fuzz testing parameter: 17 - O1F7
+Fuzz testing parameter: 18 - O1F8
+Fuzz testing parameter: 19 - O1F9
+Fuzz testing parameter: 20 - O2F0
+Fuzz testing parameter: 21 - O2F1
+Fuzz testing parameter: 22 - O2F2
+Fuzz testing parameter: 23 - O2F3
+Fuzz testing parameter: 24 - O2F4
+Fuzz testing parameter: 25 - O2F5
+Fuzz testing parameter: 26 - O2F6
+Fuzz testing parameter: 27 - O2F7
+Fuzz testing parameter: 28 - O2F8
+Fuzz testing parameter: 29 - O2F9
+Fuzz testing parameter: 30 - O3F0
+Fuzz testing parameter: 31 - O3F1
+Fuzz testing parameter: 32 - O3F2
+Fuzz testing parameter: 33 - O3F3
+Fuzz testing parameter: 34 - O3F4
+Fuzz testing parameter: 35 - O3F5
+Fuzz testing parameter: 36 - O3F6
+Fuzz testing parameter: 37 - O3F7
+Fuzz testing parameter: 38 - O3F8
+Fuzz testing parameter: 39 - O3F9
+Fuzz testing parameter: 40 - O4F0
+pluginval received Illegal instruction: 4, exiting immediately
+
+Finished validating: /Users/dmitry/Desktop/dev/TheSynth/Build/PluginTemplate_artefacts/Debug/VST3/Plugin Template.vst3
+ALL TESTS PASSED
+
+Finished batch validation
