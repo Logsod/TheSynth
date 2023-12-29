@@ -71,9 +71,71 @@ AudioPluginAudioProcessor::AudioPluginAudioProcessor()
 #endif
                          .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
+                         ),
+
+      apvts(*this, nullptr, "Parameters",
+            {std::make_unique<AudioParameterFloat>(ParameterID{"O0F1", 1}, "O0F1", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F2", 1}, "O0F2", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F3", 1}, "O0F3", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F4", 1}, "O0F4", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F5", 1}, "O0F5", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F6", 1}, "O0F6", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F7", 1}, "O0F7", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F8", 1}, "O0F8", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O0F9", 1}, "O0F9", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F1", 1}, "O1F1", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F2", 1}, "O1F2", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F3", 1}, "O1F3", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F4", 1}, "O1F4", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F5", 1}, "O1F5", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F6", 1}, "O1F6", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F7", 1}, "O1F7", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F8", 1}, "O1F8", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O1F9", 1}, "O1F9", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F1", 1}, "O2F1", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F2", 1}, "O2F2", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F3", 1}, "O2F3", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F4", 1}, "O2F4", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F5", 1}, "O2F5", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F6", 1}, "O2F6", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F7", 1}, "O2F7", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F8", 1}, "O2F8", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O2F9", 1}, "O2F9", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F1", 1}, "O3F1", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F2", 1}, "O3F2", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F3", 1}, "O3F3", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F4", 1}, "O3F4", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F5", 1}, "O3F5", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F6", 1}, "O3F6", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F7", 1}, "O3F7", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F8", 1}, "O3F8", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O3F9", 1}, "O3F9", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F1", 1}, "O4F1", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F2", 1}, "O4F2", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F3", 1}, "O4F3", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F4", 1}, "O4F4", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F5", 1}, "O4F5", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F6", 1}, "O4F6", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F7", 1}, "O4F7", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F8", 1}, "O4F8", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O4F9", 1}, "O4F9", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F1", 1}, "O5F1", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F2", 1}, "O5F2", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F3", 1}, "O5F3", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F4", 1}, "O5F4", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F5", 1}, "O5F5", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F6", 1}, "O5F6", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F7", 1}, "O5F7", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F8", 1}, "O5F8", NormalisableRange<float>(0.0f, 1.0f), 0.9f),
+             std::make_unique<AudioParameterFloat>(ParameterID{"O5F9", 1}, "O5F9", NormalisableRange<float>(0.0f, 1.0f), 0.9f)}
+
       )
 {
-    apvts = new AudioProcessorValueTreeState(*this, nullptr, "Parameters", createParameters());
 }
 
 AudioPluginAudioProcessor::~AudioPluginAudioProcessor()
@@ -257,131 +319,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout AudioPluginAudioProcessor::c
     std::vector<std::unique_ptr<juce::RangedAudioParameter>> params;
 
     std::unique_ptr<AudioParameterFloat> p;
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP0, paramID_OSC_0_FP0, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP1, paramID_OSC_0_FP1, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP2, paramID_OSC_0_FP2, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP3, paramID_OSC_0_FP3, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP4, paramID_OSC_0_FP4, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP5, paramID_OSC_0_FP5, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP6, paramID_OSC_0_FP6, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP7, paramID_OSC_0_FP7, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP8, paramID_OSC_0_FP8, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_0_FP9, paramID_OSC_0_FP9, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP0, paramID_OSC_1_FP0, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP1, paramID_OSC_1_FP1, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP2, paramID_OSC_1_FP2, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP3, paramID_OSC_1_FP3, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP4, paramID_OSC_1_FP4, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP5, paramID_OSC_1_FP5, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP6, paramID_OSC_1_FP6, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP7, paramID_OSC_1_FP7, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP8, paramID_OSC_1_FP8, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_1_FP9, paramID_OSC_1_FP9, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP0, paramID_OSC_2_FP0, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP1, paramID_OSC_2_FP1, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP2, paramID_OSC_2_FP2, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP3, paramID_OSC_2_FP3, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP4, paramID_OSC_2_FP4, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP5, paramID_OSC_2_FP5, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP6, paramID_OSC_2_FP6, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP7, paramID_OSC_2_FP7, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP8, paramID_OSC_2_FP8, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_2_FP9, paramID_OSC_2_FP9, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP0, paramID_OSC_3_FP0, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP1, paramID_OSC_3_FP1, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP2, paramID_OSC_3_FP2, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP3, paramID_OSC_3_FP3, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP4, paramID_OSC_3_FP4, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP5, paramID_OSC_3_FP5, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP6, paramID_OSC_3_FP6, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP7, paramID_OSC_3_FP7, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP8, paramID_OSC_3_FP8, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_3_FP9, paramID_OSC_3_FP9, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP0, paramID_OSC_4_FP0, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP1, paramID_OSC_4_FP1, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP2, paramID_OSC_4_FP2, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP3, paramID_OSC_4_FP3, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP4, paramID_OSC_4_FP4, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP5, paramID_OSC_4_FP5, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP6, paramID_OSC_4_FP6, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP7, paramID_OSC_4_FP7, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP8, paramID_OSC_4_FP8, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_4_FP9, paramID_OSC_4_FP9, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP0, paramID_OSC_5_FP0, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP1, paramID_OSC_5_FP1, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP2, paramID_OSC_5_FP2, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP3, paramID_OSC_5_FP3, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP4, paramID_OSC_5_FP4, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP5, paramID_OSC_5_FP5, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP6, paramID_OSC_5_FP6, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP7, paramID_OSC_5_FP7, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP8, paramID_OSC_5_FP8, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
-    p = std::make_unique<AudioParameterFloat>(paramID_OSC_5_FP9, paramID_OSC_5_FP9, 0.0f, 1.0f, 0.5f);
-    params.push_back(std::move(p));
+    params.push_back(std::make_unique<AudioParameterFloat>(ParameterID{"O0F1", 1}, "O0F1", NormalisableRange<float>(0.0f, 1.0f), 0.9f));
 
     return {params.begin(), params.end()};
 }
