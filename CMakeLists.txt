@@ -182,3 +182,8 @@ if(TARGET Assets)
     source_group("" FILES ${project_assets})
 endif()
 
+if (MSVC)
+else()
+    # additional warnings
+    #add_compile_options(-fvisibility=hidden)
+endif()
